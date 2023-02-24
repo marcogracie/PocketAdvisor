@@ -1,0 +1,617 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F2244DE929A855E800A38A7D /* PocketAdvisorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2244DE829A855E800A38A7D /* PocketAdvisorApp.swift */; };
+		F2244DEB29A855E800A38A7D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2244DEA29A855E800A38A7D /* ContentView.swift */; };
+		F2244DED29A855E900A38A7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2244DEC29A855E900A38A7D /* Assets.xcassets */; };
+		F2244DF129A855E900A38A7D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2244DF029A855E900A38A7D /* Preview Assets.xcassets */; };
+		F2244DFB29A855E900A38A7D /* PocketAdvisorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2244DFA29A855E900A38A7D /* PocketAdvisorTests.swift */; };
+		F2244E0529A855E900A38A7D /* PocketAdvisorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2244E0429A855E900A38A7D /* PocketAdvisorUITests.swift */; };
+		F2244E0729A855E900A38A7D /* PocketAdvisorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2244E0629A855E900A38A7D /* PocketAdvisorUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F2244DF729A855E900A38A7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2244DDD29A855E800A38A7D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2244DE429A855E800A38A7D;
+			remoteInfo = PocketAdvisor;
+		};
+		F2244E0129A855E900A38A7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2244DDD29A855E800A38A7D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2244DE429A855E800A38A7D;
+			remoteInfo = PocketAdvisor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F2244DE529A855E800A38A7D /* PocketAdvisor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketAdvisor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2244DE829A855E800A38A7D /* PocketAdvisorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketAdvisorApp.swift; sourceTree = "<group>"; };
+		F2244DEA29A855E800A38A7D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F2244DEC29A855E900A38A7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F2244DEE29A855E900A38A7D /* PocketAdvisor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PocketAdvisor.entitlements; sourceTree = "<group>"; };
+		F2244DF029A855E900A38A7D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F2244DF629A855E900A38A7D /* PocketAdvisorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PocketAdvisorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2244DFA29A855E900A38A7D /* PocketAdvisorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketAdvisorTests.swift; sourceTree = "<group>"; };
+		F2244E0029A855E900A38A7D /* PocketAdvisorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PocketAdvisorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2244E0429A855E900A38A7D /* PocketAdvisorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketAdvisorUITests.swift; sourceTree = "<group>"; };
+		F2244E0629A855E900A38A7D /* PocketAdvisorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketAdvisorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F2244DE229A855E800A38A7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2244DF329A855E900A38A7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2244DFD29A855E900A38A7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F2244DDC29A855E800A38A7D = {
+			isa = PBXGroup;
+			children = (
+				F2244DE729A855E800A38A7D /* PocketAdvisor */,
+				F2244DF929A855E900A38A7D /* PocketAdvisorTests */,
+				F2244E0329A855E900A38A7D /* PocketAdvisorUITests */,
+				F2244DE629A855E800A38A7D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F2244DE629A855E800A38A7D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2244DE529A855E800A38A7D /* PocketAdvisor.app */,
+				F2244DF629A855E900A38A7D /* PocketAdvisorTests.xctest */,
+				F2244E0029A855E900A38A7D /* PocketAdvisorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2244DE729A855E800A38A7D /* PocketAdvisor */ = {
+			isa = PBXGroup;
+			children = (
+				F2244DE829A855E800A38A7D /* PocketAdvisorApp.swift */,
+				F2244DEA29A855E800A38A7D /* ContentView.swift */,
+				F2244DEC29A855E900A38A7D /* Assets.xcassets */,
+				F2244DEE29A855E900A38A7D /* PocketAdvisor.entitlements */,
+				F2244DEF29A855E900A38A7D /* Preview Content */,
+			);
+			path = PocketAdvisor;
+			sourceTree = "<group>";
+		};
+		F2244DEF29A855E900A38A7D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F2244DF029A855E900A38A7D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F2244DF929A855E900A38A7D /* PocketAdvisorTests */ = {
+			isa = PBXGroup;
+			children = (
+				F2244DFA29A855E900A38A7D /* PocketAdvisorTests.swift */,
+			);
+			path = PocketAdvisorTests;
+			sourceTree = "<group>";
+		};
+		F2244E0329A855E900A38A7D /* PocketAdvisorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F2244E0429A855E900A38A7D /* PocketAdvisorUITests.swift */,
+				F2244E0629A855E900A38A7D /* PocketAdvisorUITestsLaunchTests.swift */,
+			);
+			path = PocketAdvisorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F2244DE429A855E800A38A7D /* PocketAdvisor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2244E0A29A855E900A38A7D /* Build configuration list for PBXNativeTarget "PocketAdvisor" */;
+			buildPhases = (
+				F2244DE129A855E800A38A7D /* Sources */,
+				F2244DE229A855E800A38A7D /* Frameworks */,
+				F2244DE329A855E800A38A7D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PocketAdvisor;
+			productName = PocketAdvisor;
+			productReference = F2244DE529A855E800A38A7D /* PocketAdvisor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F2244DF529A855E900A38A7D /* PocketAdvisorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2244E0D29A855E900A38A7D /* Build configuration list for PBXNativeTarget "PocketAdvisorTests" */;
+			buildPhases = (
+				F2244DF229A855E900A38A7D /* Sources */,
+				F2244DF329A855E900A38A7D /* Frameworks */,
+				F2244DF429A855E900A38A7D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2244DF829A855E900A38A7D /* PBXTargetDependency */,
+			);
+			name = PocketAdvisorTests;
+			productName = PocketAdvisorTests;
+			productReference = F2244DF629A855E900A38A7D /* PocketAdvisorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F2244DFF29A855E900A38A7D /* PocketAdvisorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2244E1029A855E900A38A7D /* Build configuration list for PBXNativeTarget "PocketAdvisorUITests" */;
+			buildPhases = (
+				F2244DFC29A855E900A38A7D /* Sources */,
+				F2244DFD29A855E900A38A7D /* Frameworks */,
+				F2244DFE29A855E900A38A7D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2244E0229A855E900A38A7D /* PBXTargetDependency */,
+			);
+			name = PocketAdvisorUITests;
+			productName = PocketAdvisorUITests;
+			productReference = F2244E0029A855E900A38A7D /* PocketAdvisorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F2244DDD29A855E800A38A7D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					F2244DE429A855E800A38A7D = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					F2244DF529A855E900A38A7D = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = F2244DE429A855E800A38A7D;
+					};
+					F2244DFF29A855E900A38A7D = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = F2244DE429A855E800A38A7D;
+					};
+				};
+			};
+			buildConfigurationList = F2244DE029A855E800A38A7D /* Build configuration list for PBXProject "PocketAdvisor" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F2244DDC29A855E800A38A7D;
+			productRefGroup = F2244DE629A855E800A38A7D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F2244DE429A855E800A38A7D /* PocketAdvisor */,
+				F2244DF529A855E900A38A7D /* PocketAdvisorTests */,
+				F2244DFF29A855E900A38A7D /* PocketAdvisorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F2244DE329A855E800A38A7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2244DF129A855E900A38A7D /* Preview Assets.xcassets in Resources */,
+				F2244DED29A855E900A38A7D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2244DF429A855E900A38A7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2244DFE29A855E900A38A7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F2244DE129A855E800A38A7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2244DEB29A855E800A38A7D /* ContentView.swift in Sources */,
+				F2244DE929A855E800A38A7D /* PocketAdvisorApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2244DF229A855E900A38A7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2244DFB29A855E900A38A7D /* PocketAdvisorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2244DFC29A855E900A38A7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2244E0529A855E900A38A7D /* PocketAdvisorUITests.swift in Sources */,
+				F2244E0729A855E900A38A7D /* PocketAdvisorUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F2244DF829A855E900A38A7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2244DE429A855E800A38A7D /* PocketAdvisor */;
+			targetProxy = F2244DF729A855E900A38A7D /* PBXContainerItemProxy */;
+		};
+		F2244E0229A855E900A38A7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2244DE429A855E800A38A7D /* PocketAdvisor */;
+			targetProxy = F2244E0129A855E900A38A7D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F2244E0829A855E900A38A7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F2244E0929A855E900A38A7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		F2244E0B29A855E900A38A7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PocketAdvisor/PocketAdvisor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PocketAdvisor/Preview Content\"";
+				DEVELOPMENT_TEAM = VQ8L3236G5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Marco.PocketAdvisor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F2244E0C29A855E900A38A7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PocketAdvisor/PocketAdvisor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PocketAdvisor/Preview Content\"";
+				DEVELOPMENT_TEAM = VQ8L3236G5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Marco.PocketAdvisor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F2244E0E29A855E900A38A7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VQ8L3236G5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Marco.PocketAdvisorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PocketAdvisor.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PocketAdvisor";
+			};
+			name = Debug;
+		};
+		F2244E0F29A855E900A38A7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VQ8L3236G5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Marco.PocketAdvisorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PocketAdvisor.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PocketAdvisor";
+			};
+			name = Release;
+		};
+		F2244E1129A855E900A38A7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VQ8L3236G5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Marco.PocketAdvisorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PocketAdvisor;
+			};
+			name = Debug;
+		};
+		F2244E1229A855E900A38A7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VQ8L3236G5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Marco.PocketAdvisorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PocketAdvisor;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F2244DE029A855E800A38A7D /* Build configuration list for PBXProject "PocketAdvisor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2244E0829A855E900A38A7D /* Debug */,
+				F2244E0929A855E900A38A7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2244E0A29A855E900A38A7D /* Build configuration list for PBXNativeTarget "PocketAdvisor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2244E0B29A855E900A38A7D /* Debug */,
+				F2244E0C29A855E900A38A7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2244E0D29A855E900A38A7D /* Build configuration list for PBXNativeTarget "PocketAdvisorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2244E0E29A855E900A38A7D /* Debug */,
+				F2244E0F29A855E900A38A7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2244E1029A855E900A38A7D /* Build configuration list for PBXNativeTarget "PocketAdvisorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2244E1129A855E900A38A7D /* Debug */,
+				F2244E1229A855E900A38A7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F2244DDD29A855E800A38A7D /* Project object */;
+}
