@@ -45,6 +45,8 @@
 		F2244E0029A855E900A38A7D /* PocketAdvisorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PocketAdvisorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2244E0429A855E900A38A7D /* PocketAdvisorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketAdvisorUITests.swift; sourceTree = "<group>"; };
 		F2244E0629A855E900A38A7D /* PocketAdvisorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketAdvisorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F2244E1629A858C900A38A7D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F2244E1729A8596200A38A7D /* TODO.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = TODO.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,8 @@
 		F2244DDC29A855E800A38A7D = {
 			isa = PBXGroup;
 			children = (
+				F2244E1729A8596200A38A7D /* TODO.md */,
+				F2244E1629A858C900A38A7D /* README.md */,
 				F2244DE729A855E800A38A7D /* PocketAdvisor */,
 				F2244DF929A855E900A38A7D /* PocketAdvisorTests */,
 				F2244E0329A855E900A38A7D /* PocketAdvisorUITests */,
@@ -95,9 +99,8 @@
 		F2244DE729A855E800A38A7D /* PocketAdvisor */ = {
 			isa = PBXGroup;
 			children = (
-				F2244DE829A855E800A38A7D /* PocketAdvisorApp.swift */,
-				F2244DEA29A855E800A38A7D /* ContentView.swift */,
-				F2244DEC29A855E900A38A7D /* Assets.xcassets */,
+				F2244E1529A857CF00A38A7D /* App */,
+				F2244E1429A8578600A38A7D /* Views */,
 				F2244DEE29A855E900A38A7D /* PocketAdvisor.entitlements */,
 				F2244DEF29A855E900A38A7D /* Preview Content */,
 			);
@@ -127,6 +130,23 @@
 				F2244E0629A855E900A38A7D /* PocketAdvisorUITestsLaunchTests.swift */,
 			);
 			path = PocketAdvisorUITests;
+			sourceTree = "<group>";
+		};
+		F2244E1429A8578600A38A7D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F2244DEA29A855E800A38A7D /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F2244E1529A857CF00A38A7D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F2244DE829A855E800A38A7D /* PocketAdvisorApp.swift */,
+				F2244DEC29A855E900A38A7D /* Assets.xcassets */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
