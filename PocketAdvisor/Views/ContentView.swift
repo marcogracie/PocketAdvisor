@@ -8,19 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @Binding var name: String
+    @Binding var ticker: String
+    @Binding var change: Float
+    @Binding var blurb: String
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ZStack{
+            BackgroundView()
+            ForegroundView(name: $name, ticker: $ticker, change: $change, blurb: $blurb)
         }
-        .padding()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(name:Binding.constant("Joe Capital"), ticker: Binding.constant("JOE"), change: Binding.constant(17.0), blurb: Binding.constant("Joe Capital Engages in the sale and creation of derivatives in the health science sector."))
     }
 }
