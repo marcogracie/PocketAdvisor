@@ -13,11 +13,11 @@ struct ChartView: View {
     let data : [StockPrice]
     
     var body: some View {
-        Chart {
-            ForEach(data) { datum in
+        Chart (data) { datum in
                 LineMark(x: .value("Time", datum.time), y: .value("Price", datum.price))
-            }
         }
+        .chartYAxis(.hidden)
+        .chartXAxis(.hidden)
         .frame(width: Constants.Graphs.graphWidth, height: Constants.Graphs.graphHeight)
     }
 }
