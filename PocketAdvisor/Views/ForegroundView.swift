@@ -19,6 +19,7 @@ struct ForegroundView: View {
             Spacer()
             BottomView(name: $name, ticker: $ticker, change: $change, blurb: $blurb)
         }
+        .ignoresSafeArea()
     }
 }
 
@@ -40,7 +41,6 @@ struct BottomView: View {
         .background(Color("RoundRectFillColor"))
         .frame(width: Constants.Shapes.panelRoundedRectWidth, height: Constants.Shapes.panelRoundedRectHeight)
         .cornerRadius(Constants.Shapes.panelRoundedRectCornerRadius, corners: [.topLeft,.topRight])
-        .offset(y:34)
     }
 }
 

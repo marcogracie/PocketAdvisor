@@ -20,4 +20,9 @@ enum Constants{
         public static let panelRoundedRectHeight = CGFloat(210)
         public static let strokeWidth = CGFloat(1.0)
     }
+    
+    enum Graphs {
+        public static let graphHeight = CGFloat(556)
+        public static let graphWidth = CGFloat(390)
+    }
 }

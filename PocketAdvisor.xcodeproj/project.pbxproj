@@ -20,6 +20,8 @@
 		F2244E2029A9704B00A38A7D /* ForegroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2244E1F29A9704B00A38A7D /* ForegroundView.swift */; };
 		F2244E2229A9749800A38A7D /* TextViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2244E2129A9749800A38A7D /* TextViews.swift */; };
 		F2244E2429A9917700A38A7D /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2244E2329A9917700A38A7D /* ViewExtensions.swift */; };
+		F2244E2629AC3AEB00A38A7D /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2244E2529AC3AEB00A38A7D /* ChartView.swift */; };
+		F2244E2829AC3C6A00A38A7D /* StockPricing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2244E2729AC3C6A00A38A7D /* StockPricing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		F2244E1F29A9704B00A38A7D /* ForegroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForegroundView.swift; sourceTree = "<group>"; };
 		F2244E2129A9749800A38A7D /* TextViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViews.swift; sourceTree = "<group>"; };
 		F2244E2329A9917700A38A7D /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
+		F2244E2529AC3AEB00A38A7D /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		F2244E2729AC3C6A00A38A7D /* StockPricing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockPricing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +158,7 @@
 				F2244E1F29A9704B00A38A7D /* ForegroundView.swift */,
 				F2244E2129A9749800A38A7D /* TextViews.swift */,
 				F2244E2329A9917700A38A7D /* ViewExtensions.swift */,
+				F2244E2529AC3AEB00A38A7D /* ChartView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -171,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				F2244E1D29A96BC400A38A7D /* Constants.swift */,
+				F2244E2729AC3C6A00A38A7D /* StockPricing.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -306,10 +312,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2244E1E29A96BC400A38A7D /* Constants.swift in Sources */,
+				F2244E2829AC3C6A00A38A7D /* StockPricing.swift in Sources */,
 				F2244E1929A9677300A38A7D /* BackgroundView.swift in Sources */,
 				F2244E2429A9917700A38A7D /* ViewExtensions.swift in Sources */,
 				F2244DEB29A855E800A38A7D /* ContentView.swift in Sources */,
 				F2244E2029A9704B00A38A7D /* ForegroundView.swift in Sources */,
+				F2244E2629AC3AEB00A38A7D /* ChartView.swift in Sources */,
 				F2244E1B29A9686F00A38A7D /* ShapeViews.swift in Sources */,
 				F2244E2229A9749800A38A7D /* TextViews.swift in Sources */,
 				F2244DE929A855E800A38A7D /* PocketAdvisorApp.swift in Sources */,
