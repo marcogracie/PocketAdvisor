@@ -12,7 +12,7 @@ struct StockPrice: Identifiable {
     var price: Double
     var id = UUID()
     
-    func Bool change(){
+    func change() -> Bool {
         return true
     }
 }

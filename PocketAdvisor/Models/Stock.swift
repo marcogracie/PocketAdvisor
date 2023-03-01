@@ -10,15 +10,15 @@ import Foundation
 struct Stock {
    var name : String
    var ticker : String
-   var data : StockPrice
-   var status : Bool
+   var data : [StockPrice]
+   var change : Float
    var description : String
     
-    init(name: String, ticker: String, data: StockPrice, status: Bool, description: String) {
+    init(name: String, ticker: String, data: [StockPrice], change: Float, description: String) {
         self.name = name
         self.ticker = ticker
         self.data = data
-        self.status = data.change()
+        self.change = change
         self.description = description
     }
 }
