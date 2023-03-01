@@ -11,7 +11,7 @@ struct ForegroundView: View {
     
     @Binding var name: String
     @Binding var ticker: String
-    @Binding var change: Float
+    @Binding var change: Bool
     @Binding var blurb: String
     
     var body: some View {
@@ -27,7 +27,7 @@ struct BottomView: View {
     
     @Binding var name: String
     @Binding var ticker: String
-    @Binding var change: Float
+    @Binding var change: Bool
     @Binding var blurb: String
    
     
@@ -48,11 +48,11 @@ struct TickerView: View {
     
     @Binding var name: String
     @Binding var ticker: String
-    @Binding var change: Float
+    @Binding var change: Bool
     
     var body: some View {
         
-        let direction = change >= 0 ? true : false
+        let direction = change
         
         HStack{
             VStack(alignment: .leading) {
@@ -103,6 +103,6 @@ struct BlurbView: View {
 
 struct ForegroundView_Previews: PreviewProvider {
     static var previews: some View {
-        ForegroundView(name:Binding.constant("Joe Capital"), ticker: Binding.constant("JOE"), change: Binding.constant(17.0), blurb: Binding.constant("Joe Capital Engages in the sale and creation of derivatives in the health science sector."))
+        ForegroundView(name:Binding.constant("Joe Capital"), ticker: Binding.constant("JOE"), change: Binding.constant(true), blurb: Binding.constant("Joe Capital Engages in the sale and creation of derivatives in the health science sector."))
     }
 }

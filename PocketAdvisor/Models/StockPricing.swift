@@ -11,5 +11,9 @@ struct StockPrice: Identifiable {
     var time: Int
     var price: Double
     var id = UUID()
+    
+    func Bool change(){
+        return true
+    }
 }
 

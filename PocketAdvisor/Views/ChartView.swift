@@ -11,11 +11,14 @@ import Charts
 struct ChartView: View {
     
     let data : [StockPrice]
+    let color : Color
     
     var body: some View {
         Chart (data) { datum in
                 LineMark(x: .value("Time", datum.time), y: .value("Price", datum.price))
         }
+        .foregroundColor(color)
+        .chartXScale(domain: 0...2400)
         .chartYAxis(.hidden)
         .chartXAxis(.hidden)
         .frame(width: Constants.Graphs.graphWidth, height: Constants.Graphs.graphHeight)
@@ -25,7 +28,7 @@ struct ChartView: View {
 struct ChartView_Previews: PreviewProvider {
     static var previews: some View {
         
-        let fakeStock: [StockPrice] = [StockPrice(time: 1000, price: 57.9),StockPrice(time: 1100, price: 56.9), StockPrice(time: 1200, price:79 ), StockPrice(time: 1300, price: 50)]
-        ChartView(data: fakeStock)
+       let fakeStock: [StockPrice] = [StockPrice(time: 1000, price: 57.9),StockPrice(time: 1100, price: 56.9), StockPrice(time: 1200, price:79 ), StockPrice(time: 1300, price: 50)]
+        ChartView(data: fakeStock, color: Color("TextGreen"))
     }
 }

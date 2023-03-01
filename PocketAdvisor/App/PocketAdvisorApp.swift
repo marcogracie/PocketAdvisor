@@ -11,7 +11,7 @@ import SwiftUI
 struct PocketAdvisorApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView(name:Binding.constant("Joe Capital"), ticker: Binding.constant("JOE"), change: Binding.constant(17.0), blurb: Binding.constant("Joe Capital Engages in the sale and creation of derivatives in the health science sector."))
+            ContentView()
         }
     }
 }
