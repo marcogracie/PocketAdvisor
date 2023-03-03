@@ -23,6 +23,7 @@
 		F2244E2629AC3AEB00A38A7D /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2244E2529AC3AEB00A38A7D /* ChartView.swift */; };
 		F2244E2829AC3C6A00A38A7D /* StockPricing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2244E2729AC3C6A00A38A7D /* StockPricing.swift */; };
 		F2244E2A29AEF56800A38A7D /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2244E2929AEF56800A38A7D /* Stock.swift */; };
+		F2244E2C29B2919F00A38A7D /* ChartConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2244E2B29B2919F00A38A7D /* ChartConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		F2244E2529AC3AEB00A38A7D /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		F2244E2729AC3C6A00A38A7D /* StockPricing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockPricing.swift; sourceTree = "<group>"; };
 		F2244E2929AEF56800A38A7D /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
+		F2244E2B29B2919F00A38A7D /* ChartConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 				F2244E1D29A96BC400A38A7D /* Constants.swift */,
 				F2244E2729AC3C6A00A38A7D /* StockPricing.swift */,
 				F2244E2929AEF56800A38A7D /* Stock.swift */,
+				F2244E2B29B2919F00A38A7D /* ChartConfig.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2244E2C29B2919F00A38A7D /* ChartConfig.swift in Sources */,
 				F2244E1E29A96BC400A38A7D /* Constants.swift in Sources */,
 				F2244E2829AC3C6A00A38A7D /* StockPricing.swift in Sources */,
 				F2244E1929A9677300A38A7D /* BackgroundView.swift in Sources */,

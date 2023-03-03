@@ -9,15 +9,13 @@ import SwiftUI
 
 struct ForegroundView: View {
     
-    @Binding var name: String
-    @Binding var ticker: String
-    @Binding var change: Float
-    @Binding var blurb: String
+    @State var stock : Stock
+    @Binding var config : ChartConfig
     
     var body: some View {
         VStack{
             Spacer()
-            BottomView(name: $name, ticker: $ticker, change: $change, blurb: $blurb)
+            BottomView(stock: stock)
         }
         .ignoresSafeArea()
     }
@@ -25,18 +23,13 @@ struct ForegroundView: View {
 
 struct BottomView: View {
     
-    @Binding var name: String
-    @Binding var ticker: String
-    @Binding var change: Float
-    @Binding var blurb: String
-   
-    
+    @State var stock : Stock
     
     var body: some View {
         VStack{
-            TickerView(name: $name, ticker: $ticker, change: $change)
+            TickerView(name: stock.name, ticker: stock.ticker, change: stock.change)
             IndicatorView()
-            BlurbView(blurb: $blurb)
+            BlurbView(blurb: stock.description)
         }
         .background(Color("RoundRectFillColor"))
         .frame(width: Constants.Shapes.panelRoundedRectWidth, height: Constants.Shapes.panelRoundedRectHeight)
@@ -46,9 +39,9 @@ struct BottomView: View {
 
 struct TickerView: View {
     
-    @Binding var name: String
-    @Binding var ticker: String
-    @Binding var change: Float
+    @State var name: String
+    @State var ticker: String
+    @State var change: Float
     
     var body: some View {
         
@@ -89,7 +82,7 @@ struct IndicatorView: View {
 
 struct BlurbView: View {
     
-    @Binding var blurb: String
+    @State var blurb: String
     
     var body: some View {
         
@@ -103,6 +96,9 @@ struct BlurbView: View {
 
 struct ForegroundView_Previews: PreviewProvider {
     static var previews: some View {
-        ForegroundView(name:Binding.constant("Joe Capital"), ticker: Binding.constant("JOE"), change: Binding.constant(17.0), blurb: Binding.constant("Joe Capital Engages in the sale and creation of derivatives in the health science sector."))
+        
+        let testStock = Stock(name: "Joe capital", ticker: "JOE", data: [StockPrice(time: 1000, price: 57.9),StockPrice(time: 1100, price: 56.9), StockPrice(time: 1200, price:79 ), StockPrice(time: 1300, price: 50)], change: 7.3, description: "Joe Capital Engages in the sale and creation of derivatives in the health science sector.")
+        
+        ForegroundView(stock: testStock, config: Binding.constant(ChartConfig()))
     }
 }

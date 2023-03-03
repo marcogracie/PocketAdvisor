@@ -10,6 +10,8 @@ import Charts
 
 struct ChartView: View {
     
+    @State var config : ChartConfig
+    
     let data : [StockPrice]
     let color : Color
     
@@ -29,6 +31,6 @@ struct ChartView_Previews: PreviewProvider {
     static var previews: some View {
         
        let fakeStock: [StockPrice] = [StockPrice(time: 1000, price: 57.9),StockPrice(time: 1100, price: 56.9), StockPrice(time: 1200, price:79 ), StockPrice(time: 1300, price: 50)]
-        ChartView(data: fakeStock, color: Color("TextGreen"))
+        ChartView(config: ChartConfig(),data: fakeStock, color: Color("TextGreen"))
     }
 }
