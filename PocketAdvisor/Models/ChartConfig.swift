@@ -8,5 +8,11 @@
 import Foundation
 
 struct ChartConfig {
+    var isMacDPresented = false
+    var isRSIPrsented = false
+    var isMAPresented = false
     
+    func displayIndicator(indicator: String, stock: Stock) {
+        
+    }
 }
