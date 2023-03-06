@@ -39,6 +39,22 @@ struct RoundRectTextViewStroked: View {
     }
 }
 
+struct RoundRectTextViewFilled: View {
+    
+    var text: String
+    
+    var body: some View {
+            IndicatorTextView(text: text)
+            .frame(width: Constants.Shapes.RoundedRectViewWidth, height: Constants.Shapes.RoundedRectViewHeight)
+            .overlay{
+                RoundedRectangle(cornerRadius: Constants.Shapes.RoundedRectCornerRadius)
+                    .stroke(lineWidth: Constants.Shapes.strokeWidth)
+                    .foregroundColor(Color("RoundRectStrokeColor"))
+                    
+            }
+    }
+}
+
 struct CircleImageViewStroked: View {
     
     var systemName: String
@@ -61,6 +77,7 @@ struct ShapeViews_Previews: PreviewProvider {
         VStack{
             CircleImageViewFilled(systemName: "arrow.backward")
             RoundRectTextViewStroked(text: "MACD")
+            RoundRectTextViewFilled(text: "Login")
             CircleImageViewStroked(systemName: "graduationcap.fill")
         }
     }

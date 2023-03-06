@@ -24,11 +24,12 @@
 		F2244E2829AC3C6A00A38A7D /* StockPricing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2244E2729AC3C6A00A38A7D /* StockPricing.swift */; };
 		F2244E2A29AEF56800A38A7D /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2244E2929AEF56800A38A7D /* Stock.swift */; };
 		F2244E2C29B2919F00A38A7D /* ChartConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2244E2B29B2919F00A38A7D /* ChartConfig.swift */; };
-		F2244E2E29B5446400A38A7D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2244E2D29B5446400A38A7D /* GoogleService-Info.plist */; };
 		F2244E3129B545C800A38A7D /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F2244E3029B545C800A38A7D /* FirebaseAnalytics */; };
 		F2244E3329B545C800A38A7D /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F2244E3229B545C800A38A7D /* FirebaseAnalyticsSwift */; };
 		F2244E3529B545C800A38A7D /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = F2244E3429B545C800A38A7D /* FirebaseDatabase */; };
 		F2244E3729B545C800A38A7D /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F2244E3629B545C800A38A7D /* FirebaseDatabaseSwift */; };
+		F2244E3929B6387D00A38A7D /* SplashscreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2244E3829B6387D00A38A7D /* SplashscreenView.swift */; };
+		F2244E3B29B63A8F00A38A7D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2244E3A29B63A8F00A38A7D /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,7 +73,8 @@
 		F2244E2729AC3C6A00A38A7D /* StockPricing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockPricing.swift; sourceTree = "<group>"; };
 		F2244E2929AEF56800A38A7D /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
 		F2244E2B29B2919F00A38A7D /* ChartConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartConfig.swift; sourceTree = "<group>"; };
-		F2244E2D29B5446400A38A7D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F2244E3829B6387D00A38A7D /* SplashscreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashscreenView.swift; sourceTree = "<group>"; };
+		F2244E3A29B63A8F00A38A7D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,7 +131,7 @@
 		F2244DE729A855E800A38A7D /* PocketAdvisor */ = {
 			isa = PBXGroup;
 			children = (
-				F2244E2D29B5446400A38A7D /* GoogleService-Info.plist */,
+				F2244E3A29B63A8F00A38A7D /* GoogleService-Info.plist */,
 				F2244E1C29A96BB000A38A7D /* Models */,
 				F2244E1529A857CF00A38A7D /* App */,
 				F2244E1429A8578600A38A7D /* Views */,
@@ -174,6 +176,7 @@
 				F2244E2129A9749800A38A7D /* TextViews.swift */,
 				F2244E2329A9917700A38A7D /* ViewExtensions.swift */,
 				F2244E2529AC3AEB00A38A7D /* ChartView.swift */,
+				F2244E3829B6387D00A38A7D /* SplashscreenView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -313,7 +316,7 @@
 			files = (
 				F2244DF129A855E900A38A7D /* Preview Assets.xcassets in Resources */,
 				F2244DED29A855E900A38A7D /* Assets.xcassets in Resources */,
-				F2244E2E29B5446400A38A7D /* GoogleService-Info.plist in Resources */,
+				F2244E3B29B63A8F00A38A7D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2244E2C29B2919F00A38A7D /* ChartConfig.swift in Sources */,
+				F2244E3929B6387D00A38A7D /* SplashscreenView.swift in Sources */,
 				F2244E1E29A96BC400A38A7D /* Constants.swift in Sources */,
 				F2244E2829AC3C6A00A38A7D /* StockPricing.swift in Sources */,
 				F2244E1929A9677300A38A7D /* BackgroundView.swift in Sources */,
