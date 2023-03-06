@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct SplashscreenView: View {
+    
+    @Binding var splashScreenIsShowing: Bool
+    
     var body: some View {
         ZStack(){
             LinearGradient(gradient: Gradient(colors: [Color("BackgroundColor"), Color("BackgroundGradientEnd")]), startPoint: .top, endPoint: .bottomTrailing)
@@ -21,13 +24,16 @@ struct SplashscreenView: View {
                     SplashscreenTextView(text: "Pocket Advisor")
                 }
                 .padding([.leading, .trailing], 24)
-                BottomButtonsView()
+                BottomButtonsView(splashScreenIsShowing: $splashScreenIsShowing)
             }
         }
     }
 }
 
 struct BottomButtonsView: View {
+    
+    @Binding var splashScreenIsShowing: Bool
+    
     var body: some View {
         HStack(spacing: 14.0) {
             Button(action: {}){
@@ -42,6 +48,6 @@ struct BottomButtonsView: View {
 
 struct SplashscreenView_Previews: PreviewProvider {
     static var previews: some View {
-        SplashscreenView()
+        SplashscreenView(splashScreenIsShowing: Binding.constant(true))
     }
 }
