@@ -93,6 +93,19 @@ struct SplashscreenTextView: View {
     }
 }
 
+struct LoginButtonsTextView: View {
+    
+    var text: String
+
+    var body: some View {
+        
+        Text(text)
+            .font(.title)
+            .bold()
+            .foregroundColor(Color("StandardTextColor"))
+    }
+}
+
 struct TextViews_Previews: PreviewProvider {
     static var previews: some View {
         VStack{
@@ -104,6 +117,7 @@ struct TextViews_Previews: PreviewProvider {
             IndicatorTextView(text: "MACD")
             BlurbTextView(text: "lololo")
             SplashscreenTextView(text: "Pocket Advisor")
+            LoginButtonsTextView(text: "Login")
         }.background(Color("BackgroundColor"))
     }
 }
