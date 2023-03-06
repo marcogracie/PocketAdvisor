@@ -30,6 +30,7 @@
 		F2244E3729B545C800A38A7D /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F2244E3629B545C800A38A7D /* FirebaseDatabaseSwift */; };
 		F2244E3929B6387D00A38A7D /* SplashscreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2244E3829B6387D00A38A7D /* SplashscreenView.swift */; };
 		F2244E3B29B63A8F00A38A7D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2244E3A29B63A8F00A38A7D /* GoogleService-Info.plist */; };
+		F2244E3D29B658DE00A38A7D /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2244E3C29B658DE00A38A7D /* SafariView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		F2244E2B29B2919F00A38A7D /* ChartConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartConfig.swift; sourceTree = "<group>"; };
 		F2244E3829B6387D00A38A7D /* SplashscreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashscreenView.swift; sourceTree = "<group>"; };
 		F2244E3A29B63A8F00A38A7D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F2244E3C29B658DE00A38A7D /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 				F2244E2329A9917700A38A7D /* ViewExtensions.swift */,
 				F2244E2529AC3AEB00A38A7D /* ChartView.swift */,
 				F2244E3829B6387D00A38A7D /* SplashscreenView.swift */,
+				F2244E3C29B658DE00A38A7D /* SafariView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 				F2244E2429A9917700A38A7D /* ViewExtensions.swift in Sources */,
 				F2244DEB29A855E800A38A7D /* ContentView.swift in Sources */,
 				F2244E2029A9704B00A38A7D /* ForegroundView.swift in Sources */,
+				F2244E3D29B658DE00A38A7D /* SafariView.swift in Sources */,
 				F2244E2629AC3AEB00A38A7D /* ChartView.swift in Sources */,
 				F2244E1B29A9686F00A38A7D /* ShapeViews.swift in Sources */,
 				F2244E2229A9749800A38A7D /* TextViews.swift in Sources */,

@@ -33,11 +33,18 @@ struct SplashscreenView: View {
 struct BottomButtonsView: View {
     
     @Binding var splashScreenIsShowing: Bool
+    @State var showSafari = false
+    let loginurlString =  "https://app.alpaca.markets/oauth/authorize?response_type=code&client_id=" + Constants.Alpaca.client + "&redirect_uri=" + Constants.Flask.uri + "/main&state=8e02c9c6a3484fadaaf841fb1df290e1&scope=account:write%20trading"
     
     var body: some View {
         HStack(spacing: 14.0) {
-            Button(action: {}){
+            Button(action: {
+                self.showSafari = true
+            }){
                 RoundRectTextViewFilled(text: "Login")
+            }
+            .sheet(isPresented: $showSafari){
+                SafariView(url:URL(string: self.loginurlString)!)
             }
             Button(action: {}){
                 RoundRectTextViewFilled(text: "Sign-Up")

@@ -30,4 +30,12 @@ enum Constants{
         public static let graphHeight = CGFloat(556)
         public static let graphWidth = CGFloat(390)
     }
+    
+    enum Alpaca {
+        public static let client = "c2dc99c563f2b980bdb3895065b25c38"
+    }
+    
+    enum Flask {
+        public static let uri = "http://127.0.0.1:5000"
+    }
 }
