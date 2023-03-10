@@ -39,15 +39,14 @@ struct BottomButtonsView: View {
     var body: some View {
         HStack(spacing: 14.0) {
             Button(action: {
-                self.showSafari = true
             }){
                 RoundRectTextViewFilled(text: "Login")
             }
+            Button(action: {self.showSafari = true}){
+                RoundRectTextViewFilled(text: "Sign-Up")
+            }
             .sheet(isPresented: $showSafari){
                 SafariView(url:URL(string: self.loginurlString)!)
-            }
-            Button(action: {}){
-                RoundRectTextViewFilled(text: "Sign-Up")
             }
         }
     }
