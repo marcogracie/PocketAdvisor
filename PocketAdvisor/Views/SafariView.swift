@@ -20,7 +20,7 @@ struct SafariView: UIViewControllerRepresentable {
     }
 }
 
-struct LoginView_Previews: PreviewProvider {
+struct SafariSignUpView_Previews: PreviewProvider {
     static var previews: some View {
         SafariView(url :URL(string:"https://duckduckgo.com")!)
     }

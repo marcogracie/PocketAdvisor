@@ -31,6 +31,7 @@
 		F2244E3929B6387D00A38A7D /* SplashscreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2244E3829B6387D00A38A7D /* SplashscreenView.swift */; };
 		F2244E3B29B63A8F00A38A7D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2244E3A29B63A8F00A38A7D /* GoogleService-Info.plist */; };
 		F2244E3D29B658DE00A38A7D /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2244E3C29B658DE00A38A7D /* SafariView.swift */; };
+		F2244E3F29BBF29500A38A7D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2244E3E29BBF29500A38A7D /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		F2244E3829B6387D00A38A7D /* SplashscreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashscreenView.swift; sourceTree = "<group>"; };
 		F2244E3A29B63A8F00A38A7D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F2244E3C29B658DE00A38A7D /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		F2244E3E29BBF29500A38A7D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 				F2244E2529AC3AEB00A38A7D /* ChartView.swift */,
 				F2244E3829B6387D00A38A7D /* SplashscreenView.swift */,
 				F2244E3C29B658DE00A38A7D /* SafariView.swift */,
+				F2244E3E29BBF29500A38A7D /* LoginView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 				F2244E2C29B2919F00A38A7D /* ChartConfig.swift in Sources */,
 				F2244E3929B6387D00A38A7D /* SplashscreenView.swift in Sources */,
 				F2244E1E29A96BC400A38A7D /* Constants.swift in Sources */,
+				F2244E3F29BBF29500A38A7D /* LoginView.swift in Sources */,
 				F2244E2829AC3C6A00A38A7D /* StockPricing.swift in Sources */,
 				F2244E1929A9677300A38A7D /* BackgroundView.swift in Sources */,
 				F2244E2429A9917700A38A7D /* ViewExtensions.swift in Sources */,
