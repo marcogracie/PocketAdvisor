@@ -24,6 +24,8 @@ enum Constants{
         public static let strokeWidth = CGFloat(1.0)
         public static let logoWidth = CGFloat(164.0)
         public static let logoHeight = CGFloat(100.0)
+        public static let textFieldWidth = CGFloat(322.0)
+        public static let textFieldHeight = CGFloat(51.0)
     }
     
     enum Graphs {

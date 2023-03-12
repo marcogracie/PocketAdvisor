@@ -32,6 +32,7 @@
 		F2244E3B29B63A8F00A38A7D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2244E3A29B63A8F00A38A7D /* GoogleService-Info.plist */; };
 		F2244E3D29B658DE00A38A7D /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2244E3C29B658DE00A38A7D /* SafariView.swift */; };
 		F2244E3F29BBF29500A38A7D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2244E3E29BBF29500A38A7D /* LoginView.swift */; };
+		F26123E829BE6C430033A232 /* TextfieldsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26123E729BE6C430033A232 /* TextfieldsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		F2244E3A29B63A8F00A38A7D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F2244E3C29B658DE00A38A7D /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 		F2244E3E29BBF29500A38A7D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F26123E729BE6C430033A232 /* TextfieldsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextfieldsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 				F2244E3829B6387D00A38A7D /* SplashscreenView.swift */,
 				F2244E3C29B658DE00A38A7D /* SafariView.swift */,
 				F2244E3E29BBF29500A38A7D /* LoginView.swift */,
+				F26123E729BE6C430033A232 /* TextfieldsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 				F2244E3F29BBF29500A38A7D /* LoginView.swift in Sources */,
 				F2244E2829AC3C6A00A38A7D /* StockPricing.swift in Sources */,
 				F2244E1929A9677300A38A7D /* BackgroundView.swift in Sources */,
+				F26123E829BE6C430033A232 /* TextfieldsView.swift in Sources */,
 				F2244E2429A9917700A38A7D /* ViewExtensions.swift in Sources */,
 				F2244DEB29A855E800A38A7D /* ContentView.swift in Sources */,
 				F2244E2029A9704B00A38A7D /* ForegroundView.swift in Sources */,

@@ -12,7 +12,7 @@ struct SplashscreenView: View {
     @Binding var splashScreenIsShowing: Bool
     
     var body: some View {
-        ZStack(){
+        ZStack{
             LinearGradient(gradient: Gradient(colors: [Color("BackgroundColor"), Color("BackgroundGradientEnd")]), startPoint: .top, endPoint: .bottomTrailing)
                 .edgesIgnoringSafeArea(.all)
             VStack{
@@ -34,12 +34,12 @@ struct BottomButtonsView: View {
     
     @Binding var splashScreenIsShowing: Bool
     @State var showSafari = false
+    @State var showLogin = false
     let loginurlString =  "https://app.alpaca.markets/oauth/authorize?response_type=code&client_id=" + Constants.Alpaca.client + "&redirect_uri=" + Constants.Flask.uri + "/main&state=8e02c9c6a3484fadaaf841fb1df290e1&scope=account:write%20trading"
     
     var body: some View {
         HStack(spacing: 14.0) {
-            Button(action: {
-            }){
+            Button(action: {self.showLogin = true}){
                 RoundRectTextViewFilled(text: "Login")
             }
             Button(action: {self.showSafari = true}){

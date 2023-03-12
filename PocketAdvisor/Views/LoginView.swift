@@ -8,8 +8,21 @@
 import SwiftUI
 
 struct LoginView: View {
+    @State private var username : String = ""
+    @State private var password: String = ""
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            LinearGradient(gradient: Gradient(colors: [Color("BackgroundColor"), Color("BackgroundGradientEnd")]), startPoint: .top, endPoint: .bottomTrailing)
+                .edgesIgnoringSafeArea(.all)
+            VStack(alignment : .center){
+                LoginScreenTitleView(text: "Log-In")
+                TextfieldsView(field:"Username", text: $username)
+                TextfieldsView(field:"Password", text: $password)
+                Button(action:{}){
+                    RoundRectTextViewFilled(text: "Sign-In")
+                }
+            }
+        }
     }
 }
 
