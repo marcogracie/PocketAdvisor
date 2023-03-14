@@ -33,6 +33,7 @@
 		F2244E3D29B658DE00A38A7D /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2244E3C29B658DE00A38A7D /* SafariView.swift */; };
 		F2244E3F29BBF29500A38A7D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2244E3E29BBF29500A38A7D /* LoginView.swift */; };
 		F26123E829BE6C430033A232 /* TextfieldsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26123E729BE6C430033A232 /* TextfieldsView.swift */; };
+		F26123EA29C010D90033A232 /* LoginActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26123E929C010D90033A232 /* LoginActions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		F2244E3C29B658DE00A38A7D /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 		F2244E3E29BBF29500A38A7D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F26123E729BE6C430033A232 /* TextfieldsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextfieldsView.swift; sourceTree = "<group>"; };
+		F26123E929C010D90033A232 /* LoginActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginActions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +208,7 @@
 				F2244E2729AC3C6A00A38A7D /* StockPricing.swift */,
 				F2244E2929AEF56800A38A7D /* Stock.swift */,
 				F2244E2B29B2919F00A38A7D /* ChartConfig.swift */,
+				F26123E929C010D90033A232 /* LoginActions.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 				F2244E1E29A96BC400A38A7D /* Constants.swift in Sources */,
 				F2244E3F29BBF29500A38A7D /* LoginView.swift in Sources */,
 				F2244E2829AC3C6A00A38A7D /* StockPricing.swift in Sources */,
+				F26123EA29C010D90033A232 /* LoginActions.swift in Sources */,
 				F2244E1929A9677300A38A7D /* BackgroundView.swift in Sources */,
 				F26123E829BE6C430033A232 /* TextfieldsView.swift in Sources */,
 				F2244E2429A9917700A38A7D /* ViewExtensions.swift in Sources */,

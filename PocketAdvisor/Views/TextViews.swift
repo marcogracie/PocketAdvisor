@@ -113,9 +113,8 @@ struct LoginScreenTitleView: View {
     var body: some View {
         
         Text(text)
-            .font(.largeTitle)
+            .font(.system(size: 64))
             .bold()
-            .fontWeight(.heavy)
             .foregroundColor(Color("SplashscreenTitleColor"))
     }
 }

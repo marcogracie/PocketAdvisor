@@ -42,6 +42,9 @@ struct BottomButtonsView: View {
             Button(action: {self.showLogin = true}){
                 RoundRectTextViewFilled(text: "Login")
             }
+            .sheet(isPresented: $showLogin){
+                LoginView()
+            }
             Button(action: {self.showSafari = true}){
                 RoundRectTextViewFilled(text: "Sign-Up")
             }

@@ -15,11 +15,12 @@ struct LoginView: View {
             LinearGradient(gradient: Gradient(colors: [Color("BackgroundColor"), Color("BackgroundGradientEnd")]), startPoint: .top, endPoint: .bottomTrailing)
                 .edgesIgnoringSafeArea(.all)
             VStack(alignment : .center){
-                LoginScreenTitleView(text: "Log-In")
+                LoginScreenTitleView(text: "Log In")
                 TextfieldsView(field:"Username", text: $username)
                 TextfieldsView(field:"Password", text: $password)
                 Button(action:{}){
-                    RoundRectTextViewFilled(text: "Sign-In")
+                    RoundRectTextViewFilled(text: "Log In")
+                    // TODO: when the user clicks this, go to login func, then if there exists a token, pass it through and init a mainpage with that token.
                 }
             }
         }
