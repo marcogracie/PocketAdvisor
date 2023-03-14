@@ -28,7 +28,7 @@ func login(username: String, password: String) -> LoginInfo {
         let response = String(data: data, encoding: .utf8)?.split(separator: "|")
         token = String(response![0])
         polygonToken = String(response![1])
-        
     }
+    dataTask.resume()
     return LoginInfo(token: token!, polygonToken: polygonToken!)
 }

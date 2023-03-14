@@ -36,7 +36,9 @@ struct LoginView: View {
                 label:do {
                     Text("The username" + username + "Does not exist or the password is incorrect" )
                 }
-                    Button()
+                    Button("Ok"){
+                        notExist = false
+                    }
                     
                 }
             }
