@@ -15,8 +15,8 @@ struct LoginInfo {
 
 func login(username: String, password: String) -> LoginInfo {
     let url = URL(string: Constants.Flask.uri + "/verifyUser?username=" + username + "&password=" + password)!
-    var token : String
-    var polygonToken : String
+    var token : String?
+    var polygonToken : String?
     
     let defaultSessionConfiguration = URLSessionConfiguration.default
     let defaultSession = URLSession(configuration: defaultSessionConfiguration)
@@ -28,11 +28,7 @@ func login(username: String, password: String) -> LoginInfo {
         let response = String(data: data, encoding: .utf8)?.split(separator: "|")
         token = String(response![0])
         polygonToken = String(response![1])
-        if (token != "No Token Found") {
-            return LoginInfo(token: token, polygonToken: polygonToken)
-        }
-        else {
-            return false
-        }
+        
     }
+    return LoginInfo(token: token!, polygonToken: polygonToken!)
 }

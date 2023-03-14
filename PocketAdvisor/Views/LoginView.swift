@@ -10,6 +10,7 @@ import SwiftUI
 struct LoginView: View {
     @State private var username : String = ""
     @State private var password: String = ""
+    @State private var notExist: Bool = false
     var body: some View {
         ZStack{
             LinearGradient(gradient: Gradient(colors: [Color("BackgroundColor"), Color("BackgroundGradientEnd")]), startPoint: .top, endPoint: .bottomTrailing)
@@ -18,9 +19,25 @@ struct LoginView: View {
                 LoginScreenTitleView(text: "Log In")
                 TextfieldsView(field:"Username", text: $username)
                 TextfieldsView(field:"Password", text: $password)
-                Button(action:{}){
+                Button(action:{if (login(username: username, password: password).token != "NoTokenFound"){
+                    
+                    //TODO: Switch to main display with the token and polygon token
+                } else {
+                    notExist = true
+                }
+                    
+                }){
                     RoundRectTextViewFilled(text: "Log In")
-                    // TODO: when the user clicks this, go to login func, then if there exists a token, pass it through and init a mainpage with that token.
+                }
+                //TODO: make this message more specific, this will involve work w/ backend
+                .alert("Username or password doesn't exist",
+                       isPresented: $notExist,
+                       presenting: username ) { username in
+                label:do {
+                    Text("The username" + username + "Does not exist or the password is incorrect" )
+                }
+                    Button()
+                    
                 }
             }
         }
