@@ -10,13 +10,13 @@ import SwiftUI
 struct ContentView: View {
     @State var splashScreenIsShowing = true
     @State var stockScreenIsShowing = false
-    @State private var username : String = ""
-    @State private var password: String = ""
+    @State private var token : String = ""
+    @State private var polygonToken: String = ""
     
     var body: some View {
         ZStack{
             if (splashScreenIsShowing == true){
-                SplashscreenView(splashScreenIsShowing: $splashScreenIsShowing, username: $username, password: $password)
+                SplashscreenView(splashScreenIsShowing: $splashScreenIsShowing, token: $token, polygonToken: $polygonToken)
             }
             else {
                 MainScreenView()

@@ -10,6 +10,9 @@ import SwiftUI
 struct LoginView: View {
     @Binding var username : String
     @Binding var password : String
+    @Binding var token : String
+    @Binding var polygonToken: String
+    @Binding var splashScreenIsShowing : Bool
     @State private var notExist: Bool = false
     var body: some View {
         ZStack{
@@ -20,8 +23,10 @@ struct LoginView: View {
                 TextfieldsView(field:"Username", text: $username)
                 TextfieldsView(field:"Password", text: $password)
                 Button(action:{if (login(username: username, password: password).token != "NoTokenFound"){
-                    
-                    //TODO: Switch to main display with the token and polygon token
+                    var tokens : LoginInfo = login(username: username, password: password)
+                    token = tokens.token
+                    polygonToken = tokens.polygonToken
+                    splashScreenIsShowing = false
                 } else {
                     notExist = true
                 }
@@ -48,6 +53,6 @@ struct LoginView: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView(username: Binding.constant(""), password: Binding.constant("") )
+        LoginView(username: Binding.constant(""), password: Binding.constant(""), token: Binding.constant(""), polygonToken: Binding.constant(""), splashScreenIsShowing: Binding.constant(true) )
     }
 }

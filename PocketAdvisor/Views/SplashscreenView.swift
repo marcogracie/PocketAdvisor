@@ -10,8 +10,8 @@ import SwiftUI
 struct SplashscreenView: View {
     
     @Binding var splashScreenIsShowing: Bool
-    @Binding var username: String
-    @Binding var password: String
+    @Binding var token: String
+    @Binding var polygonToken: String
     
     var body: some View {
         ZStack{
@@ -26,7 +26,7 @@ struct SplashscreenView: View {
                     SplashscreenTextView(text: "Pocket Advisor")
                 }
                 .padding([.leading, .trailing], 24)
-                BottomButtonsView(splashScreenIsShowing: $splashScreenIsShowing,username: $username, password: $password )
+                BottomButtonsView(splashScreenIsShowing: $splashScreenIsShowing, token: $token, polygonToken: $polygonToken)
             }
         }
     }
@@ -35,10 +35,12 @@ struct SplashscreenView: View {
 struct BottomButtonsView: View {
     
     @Binding var splashScreenIsShowing: Bool
-    @Binding var username: String
-    @Binding var password: String
-    @State var showSafari = false
-    @State var showLogin = false
+    @Binding var token: String
+    @Binding var polygonToken: String
+    @State private var username: String = ""
+    @State private var password: String = ""
+    @State private var showSafari = false
+    @State private var showLogin = false
     let loginurlString =  "https://app.alpaca.markets/oauth/authorize?response_type=code&client_id=" + Constants.Alpaca.client + "&redirect_uri=" + Constants.Flask.uri + "/main&state=8e02c9c6a3484fadaaf841fb1df290e1&scope=account:write%20trading"
     
     var body: some View {
@@ -47,7 +49,7 @@ struct BottomButtonsView: View {
                 RoundRectTextViewFilled(text: "Login")
             }
             .sheet(isPresented: $showLogin){
-                LoginView(username: $username, password: $password)
+                LoginView(username: $username, password: $password, token: $token, polygonToken: $polygonToken, splashScreenIsShowing: $splashScreenIsShowing)
             }
             Button(action: {self.showSafari = true}){
                 RoundRectTextViewFilled(text: "Sign-Up")
@@ -61,6 +63,6 @@ struct BottomButtonsView: View {
 
 struct SplashscreenView_Previews: PreviewProvider {
     static var previews: some View {
-        SplashscreenView(splashScreenIsShowing: Binding.constant(true),username: Binding.constant(""), password: Binding.constant("") )
+        SplashscreenView(splashScreenIsShowing: Binding.constant(true),token: Binding.constant(""), polygonToken: Binding.constant("") )
     }
 }
