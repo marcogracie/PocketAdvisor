@@ -10,6 +10,8 @@ import SwiftUI
 struct SplashscreenView: View {
     
     @Binding var splashScreenIsShowing: Bool
+    @Binding var username: String
+    @Binding var password: String
     
     var body: some View {
         ZStack{
@@ -24,7 +26,7 @@ struct SplashscreenView: View {
                     SplashscreenTextView(text: "Pocket Advisor")
                 }
                 .padding([.leading, .trailing], 24)
-                BottomButtonsView(splashScreenIsShowing: $splashScreenIsShowing)
+                BottomButtonsView(splashScreenIsShowing: $splashScreenIsShowing,username: $username, password: $password )
             }
         }
     }
@@ -33,6 +35,8 @@ struct SplashscreenView: View {
 struct BottomButtonsView: View {
     
     @Binding var splashScreenIsShowing: Bool
+    @Binding var username: String
+    @Binding var password: String
     @State var showSafari = false
     @State var showLogin = false
     let loginurlString =  "https://app.alpaca.markets/oauth/authorize?response_type=code&client_id=" + Constants.Alpaca.client + "&redirect_uri=" + Constants.Flask.uri + "/main&state=8e02c9c6a3484fadaaf841fb1df290e1&scope=account:write%20trading"
@@ -43,7 +47,7 @@ struct BottomButtonsView: View {
                 RoundRectTextViewFilled(text: "Login")
             }
             .sheet(isPresented: $showLogin){
-                LoginView()
+                LoginView(username: $username, password: $password)
             }
             Button(action: {self.showSafari = true}){
                 RoundRectTextViewFilled(text: "Sign-Up")
@@ -57,6 +61,6 @@ struct BottomButtonsView: View {
 
 struct SplashscreenView_Previews: PreviewProvider {
     static var previews: some View {
-        SplashscreenView(splashScreenIsShowing: Binding.constant(true))
+        SplashscreenView(splashScreenIsShowing: Binding.constant(true),username: Binding.constant(""), password: Binding.constant("") )
     }
 }

@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct LoginView: View {
-    @State private var username : String = ""
-    @State private var password: String = ""
+    @Binding var username : String
+    @Binding var password : String
     @State private var notExist: Bool = false
     var body: some View {
         ZStack{
@@ -48,6 +48,6 @@ struct LoginView: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        LoginView(username: Binding.constant(""), password: Binding.constant("") )
     }
 }

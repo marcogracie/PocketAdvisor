@@ -34,6 +34,8 @@
 		F2244E3F29BBF29500A38A7D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2244E3E29BBF29500A38A7D /* LoginView.swift */; };
 		F26123E829BE6C430033A232 /* TextfieldsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26123E729BE6C430033A232 /* TextfieldsView.swift */; };
 		F26123EA29C010D90033A232 /* LoginActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26123E929C010D90033A232 /* LoginActions.swift */; };
+		F2C7EE1229C2AC4300713F3A /* StockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C7EE1129C2AC4300713F3A /* StockView.swift */; };
+		F2C7EE1429C2AD1C00713F3A /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C7EE1329C2AD1C00713F3A /* MainScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,8 @@
 		F2244E3E29BBF29500A38A7D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F26123E729BE6C430033A232 /* TextfieldsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextfieldsView.swift; sourceTree = "<group>"; };
 		F26123E929C010D90033A232 /* LoginActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginActions.swift; sourceTree = "<group>"; };
+		F2C7EE1129C2AC4300713F3A /* StockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockView.swift; sourceTree = "<group>"; };
+		F2C7EE1329C2AD1C00713F3A /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +192,8 @@
 				F2244E3C29B658DE00A38A7D /* SafariView.swift */,
 				F2244E3E29BBF29500A38A7D /* LoginView.swift */,
 				F26123E729BE6C430033A232 /* TextfieldsView.swift */,
+				F2C7EE1129C2AC4300713F3A /* StockView.swift */,
+				F2C7EE1329C2AD1C00713F3A /* MainScreenView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -355,6 +361,7 @@
 			files = (
 				F2244E2C29B2919F00A38A7D /* ChartConfig.swift in Sources */,
 				F2244E3929B6387D00A38A7D /* SplashscreenView.swift in Sources */,
+				F2C7EE1429C2AD1C00713F3A /* MainScreenView.swift in Sources */,
 				F2244E1E29A96BC400A38A7D /* Constants.swift in Sources */,
 				F2244E3F29BBF29500A38A7D /* LoginView.swift in Sources */,
 				F2244E2829AC3C6A00A38A7D /* StockPricing.swift in Sources */,
@@ -362,6 +369,7 @@
 				F2244E1929A9677300A38A7D /* BackgroundView.swift in Sources */,
 				F26123E829BE6C430033A232 /* TextfieldsView.swift in Sources */,
 				F2244E2429A9917700A38A7D /* ViewExtensions.swift in Sources */,
+				F2C7EE1229C2AC4300713F3A /* StockView.swift in Sources */,
 				F2244DEB29A855E800A38A7D /* ContentView.swift in Sources */,
 				F2244E2029A9704B00A38A7D /* ForegroundView.swift in Sources */,
 				F2244E3D29B658DE00A38A7D /* SafariView.swift in Sources */,
