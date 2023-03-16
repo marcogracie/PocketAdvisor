@@ -23,7 +23,7 @@ struct LoginView: View {
                 TextfieldsView(field:"Username", text: $username)
                 TextfieldsView(field:"Password", text: $password)
                 Button(action:{if (login(username: username, password: password).token != "NoTokenFound"){
-                    var tokens : LoginInfo = login(username: username, password: password)
+                    let tokens : LoginInfo = login(username: username, password: password)
                     token = tokens.token
                     polygonToken = tokens.polygonToken
                     splashScreenIsShowing = false
