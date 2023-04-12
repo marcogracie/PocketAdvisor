@@ -23,7 +23,6 @@ func login(username: String, password: String, completion: @escaping (LoginInfo)
     var urlRequest = URLRequest(url: url)
     urlRequest.httpMethod = "GET"
     
-    //TODO: Fix this
     let dataTask = defaultSession.dataTask(with: urlRequest) {(data, response, error) in
         guard let data = data else { return }
         let response = String(data: data, encoding: .utf8)?.split(separator: "|")
