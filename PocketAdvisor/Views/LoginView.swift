@@ -22,16 +22,18 @@ struct LoginView: View {
                 LoginScreenTitleView(text: "Log In")
                 TextfieldsView(field:"Username", text: $username)
                 TextfieldsView(field:"Password", text: $password)
-                Button(action:{if (login(username: username, password: password).token != "NoTokenFound"){
-                    let tokens : LoginInfo = login(username: username, password: password)
-                    token = tokens.token
-                    polygonToken = tokens.polygonToken
-                    splashScreenIsShowing = false
-                } else {
-                    notExist = true
-                }
-                    
-                }){
+                Button(action:{
+                    login(username: username, password: password) { loginInfo in
+                        if (loginInfo.token != "No Token Found"){
+                            let tokens : LoginInfo = loginInfo
+                            token = tokens.token
+                            polygonToken = tokens.polygonToken
+                            splashScreenIsShowing = false
+                        } else {
+                            notExist = true
+                        }
+                    }
+                    }){
                     RoundRectTextViewFilled(text: "Log In")
                 }
                 //TODO: make this message more specific, this will involve work w/ backend

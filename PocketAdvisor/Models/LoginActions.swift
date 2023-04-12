@@ -13,7 +13,7 @@ struct LoginInfo {
     var polygonToken : String
 }
 
-func login(username: String, password: String) -> LoginInfo {
+func login(username: String, password: String, completion: @escaping (LoginInfo) -> Void) {
     let url = URL(string: Constants.Flask.uri + "/verifyUser?username=" + username + "&password=" + password)!
     var token : String?
     var polygonToken : String?
@@ -29,7 +29,8 @@ func login(username: String, password: String) -> LoginInfo {
         let response = String(data: data, encoding: .utf8)?.split(separator: "|")
         token = String(response![0])
         polygonToken = String(response![1])
+        let loginInfo = LoginInfo(token: token!, polygonToken: polygonToken!)
+        completion(loginInfo)
     }
     dataTask.resume()
-    return LoginInfo(token: token!, polygonToken: polygonToken!)
 }
